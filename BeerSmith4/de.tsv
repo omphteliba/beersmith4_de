@@ -4826,7 +4826,6 @@ Custom alarm sound file name.	Dateiname des eigenen Alarmtons.
 Disables dark mode if active (Windows only)	Deaktiviert den Dunkelmodus, falls aktiv (nur Windows)
 Excludes MgCl when calculating the salt additions	Schließt MgCl bei der Berechnung der Salzgaben aus
 Only show items that are in cloud inventory	Nur Einträge aus dem Cloud-Bestand anzeigen
-# Steps	# Rasten
 Calibration temperature for the hydrometer	Kalibriertemperatur der Spindel
 The weight of the empty container - Weight vol view	Gewicht des leeren Behälters
 The specific gravity of the liquid	Spezifische Dichte der Flüssigkeit
