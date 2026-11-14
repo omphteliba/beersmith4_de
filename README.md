@@ -60,7 +60,7 @@ Nach einem BeerSmith-Update kann es neue englische Texte geben, die in `Language
 |---|---|
 | Fermentables | Schüttung / Malz/Zucker |
 | Equipment (Profile) | Brauanlage |
-| Brew Log | Sudprotokoll |
+| Brew Log | Braujournal |
 | Session | Brautag |
 | Batch Size | Ausschlagmenge |
 | Boil Size | Kochmenge / Kochvolumen |
