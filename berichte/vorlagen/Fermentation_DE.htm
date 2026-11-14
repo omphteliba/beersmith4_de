@@ -1,0 +1,39 @@
+<html xmlnx="http://wwww.w3.org/1999/xhtml">
+<head>
+	<title>$NAME</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<style type="text/css">
+		body {
+			font-size: $PRINT_SCALE%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="ingheader">
+			<div class="logo">
+				<h1>$NAME</h1>
+			</div>
+		</div>
+		<div class="full">
+			<span class="item">Typ:</span> $TYPE<br>
+			<span class="item">Tage Hauptg&auml;rung:</span> $PRIMARY_AGE Tage<br>
+			<span class="item">Temperatur Hauptg&auml;rung:</span> $DISPLAY_PRIMARY_TEMP bis $DISPLAY_PRIMARY_END_TEMP<br>
+			<span class="item">Tage Nachg&auml;rung:</span> $SECONDARY_AGE Tage<br>
+			<span class="item">Temperatur Nachg&auml;rung:</span> $DISPLAY_SECONDARY_TEMP bis $DISPLAY_SECONDARY_END_TEMP<br>
+			<span class="item">Tage 3. G&auml;rphase:</span> $TERTIARY_AGE Tage<br>
+			<span class="item">Temperatur 3. G&auml;rphase:</span> $DISPLAY_TERTIARY_TEMP bis $DISPLAY_TERTIARY_END_TEMP<br>
+			<span class="item">Reifezeit in Tagen:</span> $AGE Tage<br>
+			<span class="item">Temperatur bei der Reifung:</span> $DISPLAY_AGE_START_TEMP bis $DISPLAY_AGE_END_TEMP<br>
+		</div>
+		<p />
+		<div class="full">
+			<h3>Notizen</h3>
+			$NOTES
+		</div>
+		<p align="right">Erstellt mit BeerSmith &ndash; BeerSmith.com</p>
+	</div>
+</body>
+</html>

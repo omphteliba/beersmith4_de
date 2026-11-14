@@ -1,0 +1,94 @@
+<html xmlnx="http://wwww.w3.org/1999/xhtml">
+<head>
+<title>$NAME</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<style type="text/css">
+body { font-size: $PRINT_SCALE%; }
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="logo">
+                <h1>$NAME</h1>
+                <h2>$STYLE_NAME ($STYLE_NUMBER $STYLE_LETTER)</h2>
+            </div>
+        </div>
+        <div class="glass"><img src='$GLASS' style="width:5.3em; height:9em;" /></div>
+        <div class="col1">
+            <span class="item">Typ:</span> $TYPE<br>
+            <span class="item">Ausschlagmenge:</span> $DISPLAY_BATCH_SIZE<br>
+            <span class="item">Abf&uuml;llmenge:</span> $BOTTLING_VOLUME<br>
+            <span class="item">G&auml;rung:</span> $AGE_NAME<br>
+            <span class="item">Gesch. Stammw&uuml;rze:</span> $EST_OG<br>
+            <span class="item">Gesch. Alkohol (Vol.-%):</span> $EST_ABV<br>
+            <span class="item">Honiganteil:</span> $PCT_HONEY %<br>
+        </div>
+        <div class="col2">
+            <span class="item">Datum:</span> $DATE<br>
+            <span class="item">Version:</span> $VERSION<br>
+            <span class="item">Alter in Tagen:</span> $BATCH_AGE<br />
+            <span class="item">Brauer:</span> $BREWER<br>
+            <span class="item">Brauassistent:</span> $ASST_BREWER<br>
+            <span class="item">Brauanlage:</span> $EQUIPMENT<br />
+            <span class="item">Bewertung:</span> $TASTE_RATING
+            <br />
+        </div>
+        <div class="full">
+            <span class="item">Verkostungsnotizen:</span> $TASTE_NOTES<br>
+        </div>
+
+        <h3>Hefe und Wasser vorbereiten</h3>
+        <ul class="checklist">
+            <li>$YEAST_STARTERS</li>
+            <li>Ausr&uuml;stung reinigen und vorbereiten</li>
+            <li>Gewicht G&auml;rstoffe Hauptg&auml;rung: $PRIMARY_FERM_WT</li>
+            <li>Vol. G&auml;rstoffe Hauptg&auml;rung: $PRIMARY_FERM_VOL</li>
+            <li>Wasserzugabe Hauptg&auml;rung: $PRIMARY_WATER_ADD</li>
+            <li>$WATER_PREP</li>
+        </ul>
+        $IF_HAS_BOIL_ING
+        <h3>Zutaten beim Kochen</h3>
+        <ul class="checklist">
+            <li>Wasser zugeben, um das Kochvolumen von $DISPLAY_BOIL_SIZE zu erreichen</li>
+        </ul>
+        $BOIL_INGREDIENTS
+        $STEEP_HOPS
+        <ul class="checklist">
+            <li>Gesch. Volumen nach dem Kochen: $POST_BOIL_VOLUME, gesch. Dichte nach dem Kochen: $EST_OG</li>
+        </ul>
+        $ENDIF
+        $FERMENT_INGREDIENTS
+        <ul class="checklist">
+            <li>Tats&auml;chliche Stammw&uuml;rze messen _______&nbsp;&nbsp;&nbsp;&nbsp; (Ziel: $EST_OG)</li>
+            <li>Bei Bedarf Wasser zugeben, um die Endmenge von $DISPLAY_BATCH_SIZE zu erreichen</li>
+            <li>Tats&auml;chliche Ausschlagmenge messen _______&nbsp;&nbsp;&nbsp;&nbsp; (Ziel: $DISPLAY_BATCH_SIZE)</li>
+        </ul>
+        <h3>G&auml;rung</h3>
+        <ul class="checklist">
+            <li>N&auml;hrstoffmethode: $mead_method</li>
+            <li>Gesch. N&auml;hrstoffbedarf: $NUTRIENTS</li>
+            <li>Gesch. 1/3-Zuckerbruch: $ONE_THIRD_BREAK</li>
+            <li>Gesch. 2/3-Zuckerbruch: $TWO_THIRD_BREAK</li>
+            <li>$PRIMARY_STEP $PRIMARY_INGREDIENTS</li>
+            <li>$SECONDARY_STEP $SECONDARY_INGREDIENTS</li>
+            <li>$TERTIARY_STEP</li>
+            <li>$BULK_AGE_STEP</li>
+        </ul>
+        <h3>Hopfenstopfen und Abf&uuml;llen in Flasche/Fass</h3>
+        $BOTTLING_INGREDIENTS
+        <ul class="checklist">
+            <li>Restextrakt messen: _________&nbsp; (Sch&auml;tzung: $EST_FG)</li>
+            <li>Abgef&uuml;llt in Flasche/Fass am: $BOTTLING_DATE &ndash; Karbonisierung: $DISPLAY_CARBONATION</li>
+            <li>Getr&auml;nk $AGE Tage bei $DISPLAY_AGE_TEMP reifen lassen</li>
+            <li>$END_DATE &ndash; Trinken und genie&szlig;en!</li>
+        </ul>
+        <div class="full">
+            <h3>Notizen</h3>
+            $NOTES
+        </div>
+        <p align="right">Erstellt mit BeerSmith &ndash; BeerSmith.com</p>
+    </div>
+</body>
+</html>

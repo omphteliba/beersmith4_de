@@ -1,0 +1,50 @@
+<html xmlnx="http://wwww.w3.org/1999/xhtml">
+<head>
+	<title>$NAME</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<style type="text/css">
+		body {
+			font-size: $PRINT_SCALE%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class="logo">
+				<h1>$NAME</h1>
+				<h2>$LABORATORY $PRODUCT_ID</h2>
+			</div>
+		</div>
+		<div class="col1">
+			<span class="item">Typ:</span> $TYPE<br>
+			<span class="item">Form:</span> $FORM<br>
+			<span class="item">Flockung:</span> $FLOCCULATION<br>
+			<span class="item">Alkoholtoleranz:</span> $TOLERANCE %<br>
+			<span class="item">In Nachg&auml;rung zugeben:</span> $ADD_TO_SECONDARY<br>
+		</div>
+
+		<div class="col2">
+			<span class="item">Temperaturbereich:</span> $TYPE<br>
+			<span class="item">Verg&auml;rungsgrad:</span> $ATTENUATION<br>
+			<span class="item">Anzahl F&uuml;hrungen:</span> $TIMES_CULTURED<br>
+			<span class="item">Max. Wiederverwendung:</span> $MAX_REUSE<br>
+			<span class="item">Alterungsrate:</span> $AGE_RATE % pro Monat<br>
+		</div>
+		<p />
+		<div class="full">
+			<h3>Am besten f&uuml;r</h3>
+			$BEST_FOR
+		</div>
+		<p></p>
+		<div class="full">
+			<h3>Notizen</h3>
+			$NOTES
+		</div>
+		<p />
+		<p align="right">Erstellt mit BeerSmith &ndash; BeerSmith.com</p>
+	</div>
+</body>
+</html>

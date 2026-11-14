@@ -1,0 +1,54 @@
+<html xmlnx="http://wwww.w3.org/1999/xhtml">
+<head>
+	<title>$NAME</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<style type="text/css">
+		body {
+			font-size: $PRINT_SCALE%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="ingheader">
+			<div class="logo">
+				<h1>$NAME</h1>
+			</div>
+		</div>
+		<div class="col1">
+			<span class="item">Calcium:</span> $CALCIUM ppm<br>
+			<span class="item">Magnesium:</span> $MAGNESIUM ppm<br>
+			<span class="item">Natrium:</span> $SODIUM ppm<br>
+		</div>
+
+		<div class="col2">
+			<span class="item">Sulfat:</span> $SULFATE ppm<br>
+			<span class="item">Chlorid:</span> $CHLORIDE ppm<br>
+			<span class="item">Hydrogencarbonat:</span> $BICARBONATE ppm<br>
+		</div>
+		<p />
+		<div class="full">
+			<h3>Analyse</h3>
+		</div>
+		<div class="col1">
+			<span class="item">Alkalit&auml;t:</span> $ALKALINITY ppm als CaCO3<br>
+			<span class="item">Effektive H&auml;rte:</span> $HARDNESS ppm als CaCO3<br>
+			<span class="item">Restalkalit&auml;t:</span> $RESIDUAL_ALKALINITY ppm<br>
+		</div>
+
+		<div class="col2">
+			<span class="item">Sulfat/Chlorid-Verh&auml;ltnis:</span> $SULFATE_CHLORIDE_RATIO<br>
+			<span class="item">Sulfat/Chlorid-Balance:</span> $SULFATE_BALANCE<br>
+			<span class="item">Farbbereich:</span> $COLOR_RANGE<br>
+		</div>
+		<p />
+		<div class="full">
+			<h3>Notizen</h3>
+			$NOTES
+		</div>
+		<p align="right">Erstellt mit BeerSmith &ndash; BeerSmith.com</p>
+	</div>
+</body>
+</html>

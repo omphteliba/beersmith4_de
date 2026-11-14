@@ -1,0 +1,97 @@
+<html xmlnx="http://wwww.w3.org/1999/xhtml">
+<head>
+<title>$NAME</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<style type="text/css">
+body { font-size: $PRINT_SCALE%; }
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="logo">
+                <h1>$NAME</h1>
+                <h2>$STYLE_NAME ($STYLE_NUMBER $STYLE_LETTER)</h2>
+            </div>
+        </div>
+        <div class="glass"><img src='$GLASS' style="width:5.3em; height:9em;" /></div>
+        <div class="col1">
+            <span class="item">Typ:</span> $TYPE<br>
+            <span class="item">Ausschlagmenge:</span> $DISPLAY_BATCH_SIZE<br>
+            <span class="item">Kochmenge:</span> $DISPLAY_BOIL_SIZE<br>
+            <span class="item">Kochzeit:</span> $BOIL_TIME min<br>
+            <span class="item">Vol. am Kochende:</span> $POST_BOIL_VOLUME<br>
+            <span class="item">Abf&uuml;llmenge:</span> $BOTTLING_VOLUME<br>
+            <span class="item">G&auml;rung:</span> $AGE_NAME<br>
+        </div>
+        <div class="col2">
+            <span class="item">Datum:</span> $DATE<br>
+            <span class="item">Brauer:</span> $BREWER<br>
+            <span class="item">Brauassistent:</span> $ASST_BREWER<br>
+            <span class="item">Brauanlage:</span> $EQUIPMENT<br>
+            <span class="item">Ausbeute:</span> $EFFICIENCY %<br>
+            <span class="item">Gesch. Maischeffizienz:</span> $EST_MASH_EFFICIENCY<br>
+            <span class="item">Bewertung:</span> $TASTE_RATING<br>
+        </div>
+        <div class="full">
+            <span class="item">Verkostungsnotizen:</span> $TASTE_NOTES<br>
+        </div>
+
+        <h3>Brauvorbereitung</h3>
+        <ul class="checklist">
+            <li>$YEAST_STARTERS</li>
+            <li>Brauanlage reinigen und vorbereiten</li>
+            <li>Gesamter Wasserbedarf: $TOTAL_WATER</li>
+            <li>S&auml;ure Hauptguss: $MASH_ACID_TEXT</li>
+        </ul>
+        $WATER_PREP
+        <h3>Maischen bzw. Malz einweichen</h3>
+        $MASH_INGREDIENTS $STEEP_INGREDIENTS $SPARGE_INGREDIENTS
+        $MASH_STEPS
+        <ul class="checklist">
+            <li>S&auml;ure Nachguss: $SPARGE_ACID_TEXT</li>
+            <li>$SPARGE_STEPS</li>
+            $FIRST_WORT_HOPS
+            <li>Wasser zugeben, um das Kochvolumen von $DISPLAY_BOIL_SIZE zu erreichen</li>
+            <li>Gesch. Dichte vor dem Kochen: $PRE_BOIL_OG</li>
+        </ul>
+        $BOIL_INGREDIENTS
+        $STEEP_HOPS
+        <ul class="checklist">
+            <li>Gesch. Volumen nach dem Kochen: $POST_BOIL_VOLUME, gesch. Dichte nach dem Kochen: $EST_OG</li>
+        </ul>
+        <h3>W&uuml;rze k&uuml;hlen und umf&uuml;llen</h3>
+        <ul class="checklist">
+            <li>W&uuml;rze auf G&auml;rtemperatur k&uuml;hlen</li>
+            <li>W&uuml;rze in den G&auml;rbeh&auml;lter umf&uuml;llen</li>
+            <li>Bei Bedarf Wasser zugeben, um die Endmenge von $DISPLAY_BATCH_SIZE zu erreichen</li>
+        </ul>
+        <h3>Hefe anstellen, Dichte und Menge messen</h3>
+        $FERMENT_INGREDIENTS
+        <ul class="checklist">
+            <li>Tats&auml;chliche Stammw&uuml;rze messen _______&nbsp;&nbsp;&nbsp;&nbsp; (Ziel: $EST_OG)</li>
+            <li>Tats&auml;chliche Ausschlagmenge messen _______&nbsp;&nbsp;&nbsp;&nbsp; (Ziel: $DISPLAY_BATCH_SIZE)</li>
+        </ul>
+        <h3>G&auml;rung</h3>
+        <ul class="checklist">
+            <li>$PRIMARY_STEP $PRIMARY_INGREDIENTS</li>
+            <li>$SECONDARY_STEP $SECONDARY_INGREDIENTS</li>
+            <li>$TERTIARY_STEP</li>
+            <li>$BULK_AGE_STEP</li>
+        </ul>
+        <h3>Hopfenstopfen und Abf&uuml;llen in Flasche/Fass</h3>
+        $BOTTLING_INGREDIENTS
+        <ul class="checklist">
+            <li>Restextrakt messen: _________&nbsp; (Sch&auml;tzung: $EST_FG)</li>
+            <li>Abgef&uuml;llt in Flasche/Fass am: $BOTTLING_DATE &ndash; Karbonisierung: $DISPLAY_CARBONATION</li>
+            <li>Bier $AGE Tage bei $DISPLAY_AGE_TEMP reifen lassen</li>
+            <li>$END_DATE &ndash; Trinken und genie&szlig;en!</li>
+        </ul>
+        <div class="full">
+            <h3>Notizen</h3>
+            $NOTES
+        </div>
+        <p align="right">Erstellt mit BeerSmith &ndash; BeerSmith.com</p>
+</body>
+</html>

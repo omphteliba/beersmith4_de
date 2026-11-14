@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>$NAME</title>
+<style type="text/css">
+body { font-size: $PRINT_SCALE%;font-family:"Arial", Helvetica, sans-serif; }
+table { font-size: $PRINT_SCALE%; font-family:"Arial", Helvetica, sans-serif; }
+</style>
+</head>
+</head>
+<body>
+  <table border="0" bgcolor="#C0C0C0" width="100%">
+    <tr>
+      <td><span style="font-size:2.2em;"><font color="#FFFFFF"><i>$NAME</i></span></font></td>
+    </tr>
+    <tr>
+      <td><font color="#FFFFFF"><i>$STYLE_NAME</i></font></td>
+    </tr>
+  </table>
+  <table border="0" width="95%">
+    <tr>
+      <td width="40%"><b><i>Typ:</i></b> $TYPE</td>
+      <td width="52%"><b><i>Datum:</i></b> $DATE</td>
+    </tr>
+    <tr>
+      <td width="40%"><b><i>Ausschlagmenge (G&auml;rbeh&auml;lter):</i></b> $DISPLAY_BATCH_SIZE</td>
+      <td width="52%"><b><i>Brauer:</i></b> $BREWER</td>
+    </tr>
+    <tr>
+      <td width="40%"><b><i>Kochmenge:</i></b> $DISPLAY_BOIL_SIZE</td>
+      <td width="52%"><b><i>Brauassistent:</i></b> $ASST_BREWER</td>
+    </tr>
+    <tr>
+      <td width="40%"><b><i>Kochzeit:</i></b> $BOIL_TIME min</td>
+      <td width="52%"><b><i>Brauanlage:</i></b> $EQUIPMENT</td>
+    </tr>
+    <tr>
+      <td width="40%"><b><i>Volumen am Kochende</i></b> $POST_BOIL_VOLUME</td>
+      <td width="52%"><b><i>Sudhausausbeute:</i></b> $EFFICIENCY %</td>
+    </tr>
+     <tr>
+      <td width="40%"><b><i>Abf&uuml;llmenge:</i></b> $BOTTLING_VOLUME</td>
+      <td width="52%"><b><i>Gesch. Maischeffizienz</i></b> $EST_MASH_EFFICIENCY</td>
+    </tr>
+       <tr>
+      <td width="40%"><b><i>G&auml;rung:</i></b> $AGE_NAME</td>
+      <td width="52%"><b><i>Bewertung (von 50):</i></b> $TASTE_RATING</td>
+    </tr>
+    <tr>
+      <td colspan="2"><b><i>Verkostungsnotizen:</i></b> $TASTE_NOTES</td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="#C0C0C0"><p align="center"><b><span style="font-size:1.3em;"><font color="#FFFFFF">Zutaten</font></span></b></td>
+    </tr>
+    <tr>
+      <td colspan="2"><p align="center">$INGREDIENTS</td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="#C0C0C0"><p align="center"><span style="font-size:1.3em;"><font color="#FFFFFF"><b>Bierprofil</b></font></span></span></td>
+    </tr>
+    <tr>
+      <td width="40%"><b><i>Gesch. Stammw&uuml;rze:</i></b> $EST_OG</td>
+      <td width="52%"><b><i>Gemessene Stammw&uuml;rze:</i></b> $DISPLAY_OG</td>
+    </tr>
+    <tr>
+      <td width="40%"><i><b>Gesch. Restextrakt:</b></i> $EST_FG</td>
+      <td width="52%"><b><i>Gemessener Restextrakt:</i></b> $DISPLAY_FG</td>
+    </tr>
+    <tr>
+      <td width="40%"><b><i>Gesch. Alkohol (Vol.-%):</i></b> $EST_ABV</td>
+      <td width="52%"><i><b>Tats&auml;chlicher Alkohol (Vol.):</b></i> $ABV</td>
+    </tr>
+    <tr>
+      <td width="40%"><i><b>Bittere:</b></i> $IBU</td>
+      <td width="52%"><b><i>Kalorien:</i></b> $CALORIES</td>
+    </tr>
+    <tr>
+      <td width="40%"><i><b>Gesch. Farbe:</b></i> $EST_COLOR</td>
+      <td width="52%"></td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="#C0C0C0"><p align="center"><span style="font-size:1.3em;"><font color="#FFFFFF"><b>Maischprofil</b></font></span></td>
+    </tr>
+    <tr>
+      <td width="40%"><b><i>Maischprofil:</i></b> $MASH_NAME</td>
+      <td width="52%"><b><i>Sch&uuml;ttung gesamt:</i></b> $GRAIN_WEIGHT</td>
+    </tr>
+    <tr>
+      <td width="40%"><b><i>Nachguss:</i></b> $SPARGE_VOLUME</td>
+      <td width="52%"><b><i>Malztemperatur:</i></b> $GRAIN_TEMP</td>
+    </tr>
+    <tr>
+      <td width="40%"><b><i>Nachgusstemperatur:</i></b> $SPARGE_TEMP</td>
+      <td width="52%"><b><i>Bottichtemperatur:</i></b> $TUN_TEMP</td>
+    </tr>
+    <tr>
+      <td width="40%"><b><i>Temp. an Brauanlage angepasst:</i></b> $EQUIP_ADJUST</td>
+      <td width="52%"><b><i>Maische-pH:</i></b> $MASH_PH</td>
+    </tr>
+    <tr>
+      <td colspan="2"><p align="center">$MASH_STEPS</td>
+    </tr>
+     <tr>
+      <td colspan="2"><b><i>Nachguss-Schritt:</i></b> $SPARGE_STEPS</td>
+    </tr>
+      <tr>
+      <td colspan="2"><b><i>Maischnotizen:</i></b> $MASH_NOTES</td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="#C0C0C0"><p align="center"><span style="font-size:1.3em;"><font color="#FFFFFF"><b>Karbonisierung und Lagerung</b></font></td>
+    </tr>
+    <tr>
+      <td width="40%"><b><i>Karbonisierungsart:</i></b> $CARBONATION_TYPE</td>
+      <td width="52%"><b><i>Volumen CO2:</i></b> $CARBONATION</td>
+    </tr>
+    <tr>
+      <td width="40%"><b><i>Druck/Gewicht:</i></b> $CARBONATION_PRESS</td>
+      <td width="52%"><b><i>Verwendete Karbonisierung:</i></b> $CARBONATION_USED</td>
+    </tr>
+    <tr>
+      <td width="40%"><b><i>Temperatur Fass/Abf&uuml;llung:</i></b> $DISPLAY_CARB_TEMP</td>
+      <td width="52%"><b><i>Reifen f&uuml;r:</i></b> $AGE Tage</td>
+    </tr>
+    <tr>
+      <td width="40%"><b><i>G&auml;rung:</i></b> $AGE_NAME</td>
+      <td width="52%"><b><i>Lagertemperatur:</i></b> $DISPLAY_AGE_TEMP</td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="#C0C0C0"><p align="center"><span style="font-size:1.3em;"><font color="#FFFFFF"><b>Notizen</b></font></span></td>
+    </tr>
+    <tr>
+      <td colspan="2">$NOTES</td>
+    </tr>
+    <tr>
+      <td colspan="2"><p align="right"><i><span style="font-size:0.8em;">Erstellt mit <a href="http://www.beersmith.com">BeerSmith</a></span></i></td>
+    </tr>
+  </table>
+</body>
+</html>

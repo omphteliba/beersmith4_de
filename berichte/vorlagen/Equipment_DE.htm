@@ -1,0 +1,48 @@
+<html xmlnx="http://wwww.w3.org/1999/xhtml">
+<head>
+	<title>$NAME</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<style type="text/css">
+		body {
+			font-size: $PRINT_SCALE%;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="ingheader">
+			<div class="logo">
+				<h1>$NAME</h1>
+			</div>
+		</div>
+
+		<div class="col1">
+			<span class="item">Ausschlagmenge:</span> $DISPLAY_BATCH_SIZE<br>
+			<span class="item">Typ:</span> $TYPE<br>
+			<span class="item">Kochvolumen:</span> $DISPLAY_BOIL_SIZE<br>
+			<span class="item">Verdampfungsrate:</span> $EVAP_RATE %<br>
+			<span class="item">Kochzeit:</span> $BOIL_TIME min<br>
+			<span class="item">Auff&uuml;llen Sudpfanne:</span> $DISPLAY_TOP_UP_KETTLE<br>
+			<span class="item">Verluste Trub/K&uuml;hler:</span> $DISPLAY_TRUB_CHILLER_LOSS<br>
+			<span class="item">Auff&uuml;llwasser G&auml;rbeh&auml;lter:</span> $DISPLAY_TOP_UP_WATER<br>
+		</div>
+
+		<div class="col2">
+			<span class="item">Maischvolumen:</span> $DISPLAY_TUN_VOLUME<br>
+			<span class="item">Gewicht Maischbottich:</span> $DISPLAY_TUN_WEIGHT<br>
+			<span class="item">Spez. W&auml;rme Maischbottich:</span> $TUN_SPECIFIC_HEAT<br>
+			<span class="item">Totraum Maischbottich:</span> $DISPLAY_LAUTER_DEADSPACE<br>
+			<span class="item">Hopfenausnutzung Anlage:</span> $HOP_UTILIZATION %<br>
+			<span class="item">Abk&uuml;hlverlust:</span> $COOLING_LOSS_PCT %<br>
+		</div>
+
+		<p />
+		<div class="full">
+			<h3>Notizen</h3>
+			$NOTES
+		</div>
+		<p align="right">Erstellt mit BeerSmith &ndash; BeerSmith.com</p>
+	</div>
+</body>
+</html>

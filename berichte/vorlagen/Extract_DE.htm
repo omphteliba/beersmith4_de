@@ -1,0 +1,97 @@
+<html xmlnx="http://wwww.w3.org/1999/xhtml">
+<head>
+<title>$NAME</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<style type="text/css">
+body { font-size: $PRINT_SCALE%; }
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+  <div class="logo">
+   <h1>$NAME</h1>
+   <h2>$STYLE_NAME ($STYLE_NUMBER $STYLE_LETTER)</h2>
+   </div>
+ </div>
+ <div class="glass"><img src='$GLASS' style="width:5.3em; height:9em;" /></div>
+ <div class="col1">
+ <span class="item">Typ:</span> $TYPE<br>
+ <span class="item">Ausschlagmenge:</span> $DISPLAY_BATCH_SIZE<br>
+ <span class="item">Kochmenge:</span> $DISPLAY_BOIL_SIZE<br>
+ <span class="item">Kochzeit:</span> $BOIL_TIME min<br>
+ <span class="item">Vol. am Kochende:</span> $POST_BOIL_VOLUME<br>
+ <span class="item">Abf&uuml;llmenge:</span> $BOTTLING_VOLUME<br>
+ </div>
+ <div class="col2">
+ <span class="item">Datum:</span> $DATE<br>
+ <span class="item">Version:</span> $VERSION<br>
+ <span class="item">Brauer:</span> $BREWER<br>
+ <span class="item">Brauassistent:</span> $ASST_BREWER<br>
+ <span class="item">Brauanlage:</span> $EQUIPMENT<br>
+  <span class="item">G&auml;rung:</span> $AGE_NAME<br>
+ <span class="item">Bewertung:</span> $TASTE_RATING<br>
+ </div>
+ <div class="full">
+ <span class="item">Verkostungsnotizen:</span> $TASTE_NOTES<br>
+ </div>
+ <div class="full">
+ $INGREDIENTS
+ </div>
+ <div class="full">
+ <h3>Dichte, Alkoholgehalt und Farbe</h3>
+ <div class="col1">
+ <span class="item">Gesch. Stammw&uuml;rze:</span> $EST_OG<br>
+ <span class="item">Gesch. Restextrakt:</span> $EST_FG<br>
+ <span class="item">Gesch. Alkohol (Vol.-%):</span> $EST_ABV<br>
+ <span class="item">Bittere:</span> $IBU<br>
+ <span class="item">Gesch. Farbe:</span> $EST_COLOR
+ <span class="item">Gesch. Kalorien:</span> $EST_CALORIES
+ </div>
+ <div class="col2">
+ <span class="item">Gemessene Stammw&uuml;rze:</span> $DISPLAY_OG<br>
+ <span class="item">Gemessener Restextrakt:</span> $DISPLAY_FG<br>
+ <span class="item">Tats&auml;chlicher Alkohol (Vol.):</span> $ABV<br>
+ <span class="item">Gemessene Kalorien:</span> $CALORIES
+ </div>
+ </div>
+<div class="full">
+<h3>Einweichen und Kochen</h3>
+ <div class="col1">
+ <span class="item">Einweichwassermenge:</span> $STEEP_VOL<br />
+ <span class="item">Gewicht Einweichmalz:</span> $STEEP_GRAIN_WT<br />
+ <span class="item">Einweichzeit:</span> $STEEP_TIME<br />
+ <span class="item">Einweichtemp.:</span> $STEEP_TEMP<br />
+ </div>
+ <div class="col2">
+ <span class="item">Gewicht G&auml;rstoffe beim Kochen:</span> $BOIL_FERM_WT<br>
+ <span class="item">Volumen G&auml;rstoffe beim Kochen:</span> $BOIL_FERM_VOL<br>
+ <span class="item">Gesch. Wasserzugabe beim Kochen:</span> $BOIL_WATER_ADD<br>
+ </div>
+ </div>
+<div class="full">
+<h3>Karbonisierung und Lagerung</h3>
+ <div class="col1">
+ <span class="item">Karbonisierungsart:</span> $CARBONATION_TYPE<br>
+ <span class="item">Druck/Gewicht:</span> $CARBONATION_PRESS<br>
+ <span class="item">Temperatur Fass/Abf&uuml;llung:</span> $DISPLAY_CARB_TEMP<br>
+ <span class="item">G&auml;rung:</span> $AGE_NAME<br>
+ <span class="item">G&auml;rbeh&auml;lter:</span> $FERMENTER<br>
+ </div>
+ <div class="col2">
+ <span class="item">Volumen CO2:</span> $CARBONATION<br>
+ <span class="item">Gesch. Karbonisierung:</span> $CARBONATION_USED<br>
+ <span class="item">Karbonisierung (aus gem. Vol.):</span> $MEASURED_CARB_AMOUNT<br>
+ <span class="item">Reifen f&uuml;r:</span> $AGE Tage<br>
+ <span class="item">Lagertemperatur:</span> $DISPLAY_AGE_TEMP
+ </div>
+ </div>
+<div class="full">
+<h3>Notizen</h3>
+$NOTES
+</div>
+<p align="right">Erstellt mit BeerSmith &ndash; BeerSmith.com</p>
+</div>
+</body>
+</html>

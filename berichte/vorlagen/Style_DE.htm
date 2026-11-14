@@ -1,0 +1,54 @@
+<html xmlnx="http://wwww.w3.org/1999/xhtml">
+<head>
+	<title>$NAME</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<style type="text/css">
+		body {
+			font-size: $PRINT_SCALE%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class="logo">
+				<h1>$NAME</h1>
+				<h2>$CATEGORY ($DISPLAY_CAT_NUM)</h2>
+			</div>
+		</div>
+		<div class="col1">
+			<span class="item">Typ:</span> $CATEGORY<br>
+			<span class="item">Stammw&uuml;rze:</span> $OG_RANGE<br>
+			<span class="item">Restextrakt:</span> $FG_RANGE<br>
+			<span class="item">Karbonisierung:</span> $CARB_RANGE<br>
+		</div>
+
+		<div class="col2">
+			<span class="item">Kategorienummer:</span> $DISPLAY_CAT_NUM<br>
+			<span class="item">Farbe:</span> $COLOR_RANGE<br>
+			<span class="item">Bittere:</span> $IBU_RANGE<br>
+			<span class="item">Alkohol (Vol.-%):</span> $ABV_RANGE<br>
+		</div>
+		<div class="full">
+			<h3>Beschreibung</h3>
+			$NOTES
+		</div>
+		<div class="full">
+			<h3>Profil</h3>
+			$PROFILE
+		</div>
+		<div class="full">
+			<h3>Zutaten</h3>
+			$INGREDIENTS
+		</div>
+		<div class="full">
+			<h3>Beispiele</h3>
+			$EXAMPLES
+		</div>
+		<p align="right">Erstellt mit BeerSmith &ndash; BeerSmith.com</p>
+	</div>
+</body>
+</html>
+

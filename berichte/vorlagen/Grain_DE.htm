@@ -1,0 +1,46 @@
+<html xmlnx="http://wwww.w3.org/1999/xhtml">
+<head>
+	<title>$NAME</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<style type="text/css">
+		body {
+			font-size: $PRINT_SCALE%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div class="logo">
+				<h1>$NAME</h1>
+				<h2>$ORIGIN - $SUPPLIER</h2>
+			</div>
+		</div>
+		<div class="col1">
+			<span class="item">Ausbeute:</span> $YIELD %<br>
+			<span class="item">Potenzial:</span> $POTENTIAL<br>
+			<span class="item">Diff. Fein-/Grobschrot:</span> $COARSE_FINE_DIFF %<br>
+			<span class="item">Feuchte:</span> $MOISTURE %<br>
+			<span class="item">Diastatische Kraft:</span> $DIASTATIC_POWER Lintner<br>
+			<span class="item">IBU (Extrakte):</span> $IBU_GAL_PER_LB IBU-gal/lb<br>
+		</div>
+
+		<div class="col2">
+			<span class="item">Typ:</span> $TYPE<br>
+			<span class="item">Farbe:</span> $DISPLAY_COLOR<br>
+			<span class="item">Max. Anteil im Sud:</span> $MAX_IN_BATCH %<br>
+			<span class="item">Maischen empfohlen:</span> $RECOMMEND_MASH<br>
+			<span class="item">Protein:</span> $PROTEIN %<br>
+		</div>
+		<p></p>
+		<div class="full">
+			<h3>Notizen</h3>
+			$NOTES
+		</div>
+		<p />
+		<p align="right">Erstellt mit BeerSmith &ndash; BeerSmith.com</p>
+	</div>
+</body>
+</html>

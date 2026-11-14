@@ -1,0 +1,39 @@
+<html xmlnx="http://wwww.w3.org/1999/xhtml">
+<head>
+	<title>$NAME</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<style type="text/css">
+		body {
+			font-size: $PRINT_SCALE%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="ingheader">
+			<div class="logo">
+				<h1>$NAME</h1>
+			</div>
+		</div>
+		<div class="full">
+			<span class="item">Bezugs-Sch&uuml;ttungsgewicht:</span> $GRAIN_WEIGHT<br>
+			<span class="item">Malztemperatur:</span> $DISPLAY_GRAIN_TEMP<br>
+			<span class="item">Bottichtemperatur:</span> $DISPLAY_TUN_TEMP<br>
+			<span class="item">Batch-Sparge:</span> $BATCH_SPARGE_YESNO<br>
+			<span class="item">Batch-Sparge-Anteil:</span> $BATCH_SPARGE_PCT %<br>
+			<span class="item">Nachgusstemperatur:</span> $DISPLAY_SPARGE_TEMP<br>
+		</div>
+		<div class="full">
+			$MASH_STEPS
+		</div>
+		<p />
+		<div class="full">
+			<h3>Notizen</h3>
+			$NOTES
+		</div>
+		<p align="right">Erstellt mit BeerSmith &ndash; BeerSmith.com</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<html>
+<head>
+<title>$NAME</title>
+<style type="text/css">
+body { font-size: $PRINT_SCALE%;font-family:"Arial", Helvetica, sans-serif; }
+table { font-size: $PRINT_SCALE%; font-family:"Arial", Helvetica, sans-serif; }
+</style>
+</head>
+<body>
+    <table border="0" width="100%" bgcolor="#C0C0C0">
+        <tr>
+            <td><span style="font-size:2.2em;"><font color="#000080"><i>Brauablauf: $NAME</i></font></span></td>
+        </tr>
+        <tr>
+            <td><font color="#000080"><i>$STYLE_NAME</i></font></td>
+        </tr>
+    </table>
+    <table border="0" width="97%">
+        <tr>
+            <td width="40%"><b><i>Typ:</i></b> $TYPE</td>
+            <td width="52%"><b><i>Datum:</i></b> $DATE</td>
+        </tr>
+        <tr>
+            <td width="40%">
+                <b>
+                    <i>
+                        Ausschlagmenge (G&auml;rbeh&auml;lter):
+                    </i>
+                </b> $DISPLAY_BATCH_SIZE
+            </td>
+            <td width="52%"><b><i>Brauer:</i></b> $BREWER</td>
+        </tr>
+        <tr>
+            <td width="40%"><b><i>Kochmenge:</i></b> $DISPLAY_BOIL_SIZE</td>
+            <td width="52%"><b><i>Brauassistent:</i></b> $ASST_BREWER</td>
+        </tr>
+        <tr>
+            <td width="40%"><b><i>Kochzeit:</i></b> $BOIL_TIME min</td>
+            <td width="52%"><b><i>Brauanlage:</i></b> $EQUIPMENT</td>
+        </tr>
+        <tr>
+            <td width="40%"><b><i>Abf&uuml;llmenge:</i></b> $BOTTLING_VOLUME</td>
+            <td width="52%"><b><i>Sudhausausbeute:</i></b> $EFFICIENCY</td>
+        </tr>
+        <tr>
+            <td width="40%"><b><i>G&auml;rung:</i></b> $AGE_NAME</td>
+            <td width="52%"><b><i>Bewertung (von 50):</i></b> $TASTE_RATING</td>
+        </tr>
+        <tr>
+            <td colspan="2"><b><i>Verkostungsnotizen:</i></b> $TASTE_NOTES</td>
+        </tr>
+    </table>
+    <table border="1" width="97%" bordercolor="#000000">
+        <tr>
+            <td colspan="2" bgcolor="#C0C0C0" height="28"><p align="center"><span style="font-size:1.3em;"><font color="#FFFFFF"><b>Brauvorbereitung</b></font></span></td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%"><p align="left">$YEAST_STARTERS</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">Brauanlage reinigen und vorbereiten</td>
+        </tr>
+        <tr>
+            <td width="4%">
+                &nbsp;
+            </td>
+            <td width="95%">Gesamter Wasserbedarf: $TOTAL_WATER</td>
+        </tr>
+        <tr>
+            <td width="4%">
+                &nbsp;
+            </td>
+            <td width="95%">S&auml;urebehandlung Hauptguss: $MASH_ACID_TEXT</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">$WATER_PREP</td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="#C0C0C0" height="28"><p align="center"><span style="font-size:1.3em;"><font color="#FFFFFF"><b>Maischen bzw. Malz einweichen</b></font></span></td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%" align="left">$MASH_INGREDIENTS $STEEP_INGREDIENTS</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">$MASH_STEPS</td>
+        </tr>
+        <tr>
+            <td width="4%">
+                &nbsp;
+            </td>
+            <td width="95%">S&auml;urebehandlung Nachgusswasser: $SPARGE_ACID_TEXT</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">
+                $SPARGE_STEPS<br>
+                $FIRST_WORT_HOPS
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="#C0C0C0" height="28"><p align="center"><span style="font-size:1.3em;"><font color="#FFFFFF"><b>W&uuml;rze kochen</b></font></span></td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%" align="left">Wasser zugeben, um das Kochvolumen von $DISPLAY_BOIL_SIZE zu erreichen</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%" align="left">Gesch. Dichte vor dem Kochen: $PRE_BOIL_OG</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%" align="left">$BOIL_INGREDIENTS</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">$STEEP_HOPS</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">Gesch. Volumen nach dem Kochen: $POST_BOIL_VOLUME, gesch. Dichte nach dem Kochen: $EST_OG</td>
+        </tr>
+    </table>
+    <table border="1" width="97%" bordercolor="#000000">
+        <tr>
+            <td colspan="2" bgcolor="#C0C0C0" height="28"><p align="center"><span style="font-size:1.3em;"><font color="#FFFFFF"><b>K&uuml;hlen und G&auml;rung vorbereiten</b></font></span></td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%" align="left">W&uuml;rze auf G&auml;rtemperatur k&uuml;hlen</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">W&uuml;rze in den G&auml;rbeh&auml;lter umf&uuml;llen</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">Wasser zugeben, um die Endmenge von $DISPLAY_BATCH_SIZE zu erreichen</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">$FERMENT_INGREDIENTS</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">Tats&auml;chliche Stammw&uuml;rze messen _______&nbsp;&nbsp;&nbsp;&nbsp; (Ziel: $EST_OG)</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">Tats&auml;chliche Ausschlagmenge messen _______&nbsp;&nbsp;&nbsp;&nbsp; (Ziel: $DISPLAY_BATCH_SIZE)</td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="#C0C0C0" height="28" align="center"><span style="font-size:1.3em;"><font color="#FFFFFF"><b>G&auml;rung</b></font></span></td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%" align="left">$PRIMARY_STEP $PRIMARY_INGREDIENTS</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">$SECONDARY_STEP $SECONDARY_INGREDIENTS</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">$TERTIARY_STEP</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">$BULK_AGE_STEP</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">Hopfenstopfen und Abf&uuml;llung in Flasche/Fass vorbereiten $BOTTLING_INGREDIENTS</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">Restextrakt messen: _________&nbsp; (Sch&auml;tzung: $EST_FG)</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">Abgef&uuml;llt in Flasche/Fass am: $BOTTLING_DATE &ndash; Karbonisierung: $DISPLAY_CARBONATION</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">Bier $AGE Tage bei $DISPLAY_AGE_TEMP reifen lassen</td>
+        </tr>
+        <tr>
+            <td width="4%">&nbsp;</td>
+            <td width="95%">$END_DATE &ndash; Trinken und genie&szlig;en!</td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="#C0C0C0" align="center"><span style="font-size:1.3em;"><font color="#FFFFFF"><b>Notizen</b></font></span></td>
+        </tr>
+        <tr>
+            <td colspan="2">$NOTES</td>
+        </tr>
+    </table>
+    <p align="right">Erstellt mit BeerSmith &ndash; BeerSmith.com</p>
+</body>
+</html>
