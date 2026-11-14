@@ -158,7 +158,7 @@ Options...	Optionen...
 General	Allgemein
 Units	Einheiten
 Bitterness	Bittere
-Copy to Brew Log	Ins Sudprotokoll kopieren
+Copy to Brew Log	Ins Braujournal kopieren
 Advanced Options	Erweiterte Optionen
 Recipe	Rezept
 Set as Default Recipe	Als Standardrezept festlegen
@@ -460,7 +460,7 @@ Customize Cols	Spalten anpassen
 Edit in window	In Fenster bearbeiten
 Edit in Tab	In Tab bearbeiten
 Default Report	Standardbericht
-Copy to BrewLog	Ins Sudprotokoll
+Copy to BrewLog	Ins Braujournal
 Advanced	Erweitert
 Set As Default	Als Standard festlegen
 Set to English (US) Units	US-Einheiten einstellen
@@ -697,7 +697,7 @@ Trub Loss	Trubverlust
 Lauter Tun Deadspace	Totraum Läuterbottich
 Top Up Water for Kettle	Auffüllwasser für Sudpfanne
 Top Up for Kettle	Auffüllen Sudpfanne
-Batch Size	Sudgröße
+Batch Size	Ausschlagmenge
 Boil Vol	Kochvol.
 Tun Weight	Bottichgewicht
 Tun Deadspace Losses	Totraumverlust Bottich
@@ -936,8 +936,8 @@ Pellet Hop Adjustment	Korrektur Pellets
 Malt Specific Heat	Spez. Wärme Malz
 Steeping Efficiency	Einweich-Ausbeute
 Grain Volume	Schüttungsvolumen
-Brew Log Name	Name Sudprotokoll
-Batch Volume Units	Einheit Sudgröße
+Brew Log Name	Name Braujournal
+Batch Volume Units	Einheit Ausschlagmenge
 Yeast Starter Units	Einheit Hefestarter
 Hop Units	Einheit Hopfen
 Mash Vol Units	Einheit Maischvolumen
@@ -1381,7 +1381,7 @@ Sync	Sync
 Style IBU Range	IBU-Bereich Stil
 Style OG Range	Stammwürze-Bereich Stil
 Style Color Range	Farbbereich Stil
-Archive a copy to the BrewLog Folder	Kopie im Sudprotokoll-Ordner archivieren
+Archive a copy to the BrewLog Folder	Kopie im Braujournal-Ordner archivieren
 Set date/time on the recipe to the current time	Datum/Uhrzeit des Rezepts auf jetzt setzen
 Reset measured values to estimated values	Messwerte auf Schätzwerte zurücksetzen
 Clear fermentation data used in age graph	Gärdaten aus dem Reifediagramm löschen
@@ -1419,7 +1419,7 @@ Items to Add	Hinzuzufügende Einträge
 Add to Cloud	Zur Cloud hinzufügen
 Dest View	Zielansicht
 Remove from Cloud Inventory	Aus Cloud-Bestand entfernen
-Archive to Cloud BrewLog	Im Cloud-Sudprotokoll archivieren
+Archive to Cloud BrewLog	Im Cloud-Braujournal archivieren
 Show Bump Version	Versionserhöhung anzeigen
 Liquid Yeast Units	Einheit Flüssighefe
 Dry Yeast Units	Einheit Trockenhefe
@@ -1685,7 +1685,7 @@ Mash Porfile	Maischprofil
 Desired Gravity	Gewünschte Dichte
 Auto-Renew	Automatisch verlängern
 Sparge Grain Absorption	Malzaufnahme Nachguss
-Archive a copy to the Brew Log Folder	Kopie im Sudprotokoll-Ordner archivieren
+Archive a copy to the Brew Log Folder	Kopie im Braujournal-Ordner archivieren
 Bump version to	Version erhöhen auf
 Tot Cells	Zellen ges.
 Magenesium Chloride (MgCL2)	Magnesiumchlorid (MgCl2)
@@ -1932,8 +1932,8 @@ New Color	Neue Farbe
 Old Color	Alte Farbe
 Desired Original Gravity	Gewünschte Stammwürze
 Old Original Gravity	Alte Stammwürze
-Old Batch Size	Alte Sudgröße
-Desired Batch Size	Gewünschte Sudgröße
+Old Batch Size	Alte Ausschlagmenge
+Desired Batch Size	Gewünschte Ausschlagmenge
 Convert Recipe to New Type	Rezept in neuen Typ umrechnen
 Could not convert the following grains. Please convert them manually: 	Folgende Malze konnten nicht umgerechnet werden. Bitte manuell umrechnen:
 Statistics	Statistik
@@ -2025,7 +2025,7 @@ You cancelled printing	Drucken abgebrochen
 There was a problem printing.\\nPerhaps your current printer is not set correctly?	Beim Drucken ist ein Problem aufgetreten.\nIst der aktuelle Drucker richtig eingerichtet?
 All Image Files (*.jpg;*.png;*.gif) |*.jpg;*.png;*.gif	Alle Bilddateien (*.jpg;*.png;*.gif) |*.jpg;*.png;*.gif
 Hop Type Adjustments	Korrekturen nach Hopfenart
-Brew Log	Sudprotokoll
+Brew Log	Braujournal
 Precision	Genauigkeit
 Increment	Schrittweite
 All Style Guides	Alle Stilrichtlinien
@@ -2142,7 +2142,7 @@ Cannot create the directory you specified	Das angegebene Verzeichnis kann nicht 
 Exit BeerSmith Now?	BeerSmith jetzt beenden?
 BeerSmith File (*.bsmx)|*.bsmx|BeerXML File (*.xml)|*.xml	BeerSmith-Datei (*.bsmx)|*.bsmx|BeerXML-Datei (*.xml)|*.xml
 All Folders	Alle Ordner
-Brew Log Only	Nur Sudprotokoll
+Brew Log Only	Nur Braujournal
 Main Recipe Folder Only	Nur Hauptrezeptordner
 Calendar Options	Kalenderoptionen
 Large Batch Utilization is 100% for batches less than 20 gal (76 l)	Die Ausnutzung bei großen Suden beträgt 100 % für Sude unter 20 gal (76 l)
@@ -2244,7 +2244,7 @@ Cool	Kühlen
 Aging	Reifung
 How large a batch you typically brew (volume into fermenter)?	Wie groß ist Ihr üblicher Sud (Menge in den Gärbehälter)?
 How much beer is lost during fermentation and bottling?	Wie viel Bier geht bei Gärung und Abfüllung verloren?
-Bottled/Kegged volume based on your batch size and losses	Abfüllmenge Flasche/Fass aus Sudgröße und Verlusten
+Bottled/Kegged volume based on your batch size and losses	Abfüllmenge Flasche/Fass aus Ausschlagmenge und Verlusten
 Additions and Losses Post Boil	Zugaben und Verluste nach dem Kochen
 Do you add top up water after boiling (usually for extract brewers)?	Geben Sie nach dem Kochen Wasser zum Auffüllen zu (meist beim Extraktbrauen)?
 How much wort is lost when cooling or to trub (gunk at bottom of boiler)?	Wie viel Würze geht beim Kühlen oder als Trub (Bodensatz in der Pfanne) verloren?
@@ -2750,7 +2750,7 @@ Displays the options dialog for BeerSmith	Zeigt den Optionsdialog von BeerSmith
 General and brewing related options tab name	Tab für allgemeine und Brau-Optionen
 Unit settings for the overall program	Einheiten-Einstellungen für das gesamte Programm
 Options used for bitterness calculations	Optionen für die Bittere-Berechnung
-Make a copy of this recipe in the Brew Log folder	Kopie dieses Rezepts im Sudprotokoll-Ordner anlegen
+Make a copy of this recipe in the Brew Log folder	Kopie dieses Rezepts im Braujournal-Ordner anlegen
 Advanced options for brewing	Erweiterte Brau-Optionen
 Ribbon used for editing the recipe database	Menüband zum Bearbeiten der Rezeptdatenbank
 Save the current recipe as the default for new recipes	Aktuelles Rezept als Vorlage für neue Rezepte speichern
@@ -3998,7 +3998,7 @@ Number of ounces of water absorbed per ounce of grain (0.96 recommended value)	V
 Heat absorbed by malt in calories per gram per degree C (0.38 recommended)	Vom Malz aufgenommene Wärme in Kalorien pro Gramm und °C (empfohlen 0,38)
 The efficiency of converting steeped grains (0.15 recommended)	Ausbeute beim Einweichen von Spezialmalzen (empfohlen 0,15)
 Volume that a kg of grain occupies in liters (0.652 recommended)	Volumen von 1 kg Malz in Litern (empfohlen 0,652)
-The name of the folder to use as a brewing log	Name des Ordners, der als Sudprotokoll dient
+The name of the folder to use as a brewing log	Name des Ordners, der als Braujournal dient
 Units to use for measuring beer batches	Einheit für Sudmengen
 Units to use for measuring grain and extract weight	Einheit für Malz- und Extraktgewichte
 Units to use when measuring yeast starters	Einheit für Hefestarter
@@ -4652,12 +4652,12 @@ Original Gravity range for the currently selected style	Stammwürzebereich des g
 Color range for the selected style	Farbbereich des gewählten Stils
 Fermentation and aging profile	Gär- und Reifeprofil
 Carbonation profile - click ot select	Karbonisierungsprofil – zum Auswählen klicken
-Saves a copy of the old session to your brewlog folder.	Speichert eine Kopie des alten Brautags in Ihrem Sudprotokoll-Ordner.
-Saves a copy of the old recipe to the brewlog as this name before resetting the session data.	Speichert eine Kopie des alten Rezepts unter diesem Namen im Sudprotokoll, bevor die Brautag-Daten zurückgesetzt werden.
+Saves a copy of the old session to your brewlog folder.	Speichert eine Kopie des alten Brautags in Ihrem Braujournal-Ordner.
+Saves a copy of the old recipe to the brewlog as this name before resetting the session data.	Speichert eine Kopie des alten Rezepts unter diesem Namen im Braujournal, bevor die Brautag-Daten zurückgesetzt werden.
 Resets the brew date on the recipe to the current date and time.	Setzt das Braudatum des Rezepts auf das aktuelle Datum und die aktuelle Uhrzeit.
 Reset the current "measured" values to be equal to the estimated values for this recipe	Setzt die aktuellen Messwerte auf die Schätzwerte dieses Rezepts zurück
 Clears all of the fermentation data points used in the fermentation data graph.	Löscht alle Messpunkte im Gärdiagramm.
-Increment the version number to the value shown after saving it to the Brew Log	Erhöht nach dem Speichern im Sudprotokoll die Versionsnummer auf den angezeigten Wert
+Increment the version number to the value shown after saving it to the Brew Log	Erhöht nach dem Speichern im Braujournal die Versionsnummer auf den angezeigten Wert
 The final water profile into the boiler, including both mash and sparge additions.	Endgültiges Wasserprofil in der Sudpfanne inkl. Maische- und Nachgusszusätzen.
 Final water profile for wort going into the fermenter	Endgültiges Wasserprofil der Würze im Gärbehälter
 Uses packages to display yeast amount rather than volume or weight. Used for legacy recipes.	Zeigt die Hefemenge in Packungen statt als Volumen oder Gewicht an. Für ältere Rezepte.
@@ -4702,7 +4702,7 @@ If checked, these items will be added to the cloud shop or inventory view instea
 Check this box to select this item.	Anhaken, um diesen Eintrag auszuwählen.
 Item name.	Name des Eintrags.
 Remove the items selected from the Cloud inventory view instead of local	Ausgewählte Einträge aus dem Cloud-Bestand statt dem lokalen entfernen
-Archive to the cloud brew log instead of the local one	Im Cloud-Sudprotokoll statt im lokalen archivieren
+Archive to the cloud brew log instead of the local one	Im Cloud-Braujournal statt im lokalen archivieren
 Internal flag used to control bumping of version during archive	Internes Kennzeichen zur Versionserhöhung beim Archivieren
 Units to use with liquid yeast amounts	Einheit für Flüssighefe
 Units to use for dry yeast measurement	Einheit für Trockenhefe
@@ -4826,3 +4826,92 @@ Custom alarm sound file name.	Dateiname des eigenen Alarmtons.
 Disables dark mode if active (Windows only)	Deaktiviert den Dunkelmodus, falls aktiv (nur Windows)
 Excludes MgCl when calculating the salt additions	Schließt MgCl bei der Berechnung der Salzgaben aus
 Only show items that are in cloud inventory	Nur Einträge aus dem Cloud-Bestand anzeigen
+# Steps	# Rasten
+Calibration temperature for the hydrometer	Kalibriertemperatur der Spindel
+The weight of the empty container - Weight vol view	Gewicht des leeren Behälters
+The specific gravity of the liquid	Spezifische Dichte der Flüssigkeit
+Estimated volume of the full container	Geschätztes Flüssigkeitsvolumen im Behälter
+Starting water volume for infusion calculator	Wasser Startvolumen für die Infusionsberechnung
+Target volumes of CO2 for Carbonation Calculator	Ziel CO2 Volumen für das Bier
+Beer temperature for carbonation calculator	Lagertemperatur von Fass oder Flaschen bei Karbonisierung mit Zucker
+Volume of beer to bottle or keg	Biervolumen in Flasche oder Fass
+Keg carbonation pressure for carbonation tool	Fassdruck, um angestrebte Karbonisierung zu erreichen
+Corn sugar needed	Benötigter Traubenzucker
+Amount of DME needed for carbonation tool	Menge an Trockenmalzextrakt, um den ganzen Sud zu karbonisieren
+Amount of corn sugar needed to keg	Menge an Traubenzucker, um im Fass zu karbonisieren
+Form of hops	Form des Hopfens
+Alpha acid percentage	Alphasäureanteil
+Beta acid percentage	Betasäureanteil
+Protein content of the grain in percent	Proteingehalt des Malzes in Prozent
+Specific gravity units	Einheiten Spezifische Dichte
+Number of 22 ounce bottles	Anzahl an 22 Unzen Flaschen
+Shrinkage of the wort due to cooling	Kontraktion des Suds während des Abkühlens
+You may dilute with either water or another beer/wort	Die Art der Flüssigkeit zum Verdünnen - Wasser oder Bier/Sud
+The specific gravity of the wort or beer to add	Spezifische Dichte des Suds oder Biers zum Zugeben
+The total volume of the mixture after the dilution	Das Gesamtvolumen nach der Verdünnung
+Percent alpha acid content of this hops before aging	Prozent an Alphasäuren im frischen Hopfen
+The temperature at which the hops is stored	Temperatur bei der der Hopfen gelagert wird
+The container used to store the hops	Der verwendete Behälter zur Hopfenlagerung
+The type of refractometer calculation to perform	Die durchzuführende Refraktometerberechnung
+Used during this stage in the brewing process	Zugabe der Zutat bei diesem Schritt
+Recommended amount of time when using this item	Empfohlene Zeit für diese Zutat
+The minimum attenuation of the yeast	Der minimale Vergärungsgrad dieser Hefe
+Indicates yeast is added to secondary fermenter	Hefe wird zur Nachgärung hinzugegeben
+Time to use hops	Zeit für die Hopfennutzung
+The name of the item	Name des Objekts
+Desired bitterness for the recipe	Angestrebte Bitterkeit für das Rezept
+Desired original gravity into fermented	Angestrebte Stammwürze vor Gärung
+Base grain used in recipe conversions	Basismalz für die Rezeptkonvertierung
+Total mash water added	Gesamtwasser in Maische
+Volume of water to use while sparging	Volumen des Nachgusswassers
+Time for exporting (BeerXML)	Zeit zum Exportieren (BeerXML)
+Adjust mash temperature to account for the mash tun.	Maischetemperatur für Brauanlage anpassen
+Total volume of wort	Gesamtvolumen des Suds
+The number of cells contained in the yeast stater pack	Anzahl der aktiven Hefezellen im Starterpack
+Number of ounces of water absorbed per ounce of grain	Volumen (ml) Wasser das von einem g Malz absorbiert wird
+Heat absorbed by malt in calories per gram per degree C	Wärme in Kalorien pro Gramm, die das Malz aufnimmt.
+The efficiency of extracting steeped grains	Effizienz zur Konvertierung eingeweichten Malzes
+If you enter your email address it can be used to retrieve your key	Optionale Email Adresse
+The desired pitch rate for hybrid yeasts in millions of cells per ml per deg P	Angestrebte Anstellrate für Hybridhefen in Millionen Zellen pro ml und Grad Plato
+The maximum allowed growth rate before a new pack of yeast is added	Maximal erlaubte Wachstumsrate bevor neue Hefe hinzugefügt wird
+If you close a recipe tab without pressing OK or Cancel, you will be asked	Wenn ausgewählt, wird vor dem Schließen gefragt
+The real attenuation of the beer based on measured OG, FG	Tatsächlicher Vergärungsgrad basierend auf SW und SE
+When checked, the final gravity attenuation is adjusted based on mash temp	Bei Auswahl wird der Restextrakt der Maischetemperatur angepasst
+The mash temperature considered to be the zero point	Diese Temperatur wird als Nullpunkt verwendet
+Character to display as a decimal point	Dezimaltrennzeichen
+Link to recover a lost password	Link zur erneuten Passwortanforderung
+Web address of proxy server to connect to cloud 	Webadresse des Proxy-Servers für die Verbindung zur Cloud
+The type of extract to add 	Art des Extrakts um Dichte anzupassen
+Percent utilization relative to boiled hops for steep/whirlpool	Prozent der Hopfennutzung bei Zugabe am Kochende/Whirlpool
+File name where archived recipe is stored	Dateiname unter dem das archivierte Rezept gespeichert ist
+Option to archive all recipe edits	Option um geänderte Rezepte zu archivieren
+Saves a copy of all deleted recipes in the archive	Speichert eine Kopie gelöschter Rezepte
+Keeps archived recipes for this amount of time	Hält Rezepte für diesen Zeitraum im Archiv
+Show the menu 	Menü anzeigen
+Water alkalinity used in sparge water adjustment	Wasser Alkalinität zur Berechnung der Nachgussansäuerung
+Acid concentration for the acid used	Konzentration der verwendeten Säure
+Total amount of additives in pH tool - used internally	Gesamtzugaben im pH Rechner
+Gypsum addition 	Gips Zugabe
+Calcium Chloride (pH adjust tool)	Calciumchlorid (pH Rechner)
+Closes open tabs when user hits Escape or Enter Key	Schließt Reiter wenn der Nutzer ESC oder Enter drückt
+A note on alpha acids used in new hop dialogs	Notiz zur Alphasäure im Hopfendialog
+File name to recover data from 	Dateiname um Daten wiederherzustellen
+Alternate printing where printouts are sent to default browser	Alternative zum Drucken
+Amount of table sugar to add to carbonate batch	Menge an Zucker um den Sud zu karbonisieren
+Individual Fermaid-K additions made four times	Individuelle vierfache Fermaid K Zugaben
+The percentage of the gravity points from honey - typically 80-100%	Prozent des Zuckeranteils im Honig - typischerweise 70-100%
+Amount of metabisulfite needed to reach target sulfite level	Menge an Metabisulfit um angestrebten Sulfitgehalt zu erreichen
+The amount of optional potassium sorbate needed 	Menge an optionalem Kaliumsorbat, die benötigt wird
+Total volume of all water ingredients used in recipe	Gesamtvolumen aller im Rezept verwendeten Wasserzugaben
+Option to use new beer glass icons	Option um neue Bierglas Icons zu verwenden
+Filters plugin list for better display	Filter-Plugin-Liste zur besseren Anzeige
+Name of this computer 	Name dieses Computers
+Matched water profile name	Name des angepassten Wasserprofils
+Tilt spreadsheet link	Tilt Spreadsheet Link
+Interval in minutes for Tilt data filtering	Intervall in Minuten für Tilt Daten Filterung
+Select the color of the sensor or ANY if you want to include all data	Farbe des Sensors wählen oder ANY für alle Daten
+Shows a small indicator ball next to entry fields with status	Zeigt eine kleine Statusanzeige neben dem Eingabefeld
+Import CSV raw temperatures in Celsius	Import der CSV Temperaturen in Celsius
+Weighted average diastatic power for the batch.	Gewichteter Mittelwert der diastatischen Kraft des Ansatzes
+SRM Color for the grain - used in BeerXML output	SRM Malzfarbe - verwendet für BeerXML Export
+Time for export (BeerXML)	Zeit zum Exportieren (BeerXML)
