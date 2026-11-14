@@ -1,54 +1,38 @@
 # BeerSmith 4 auf Deutsch
 
-Eine deutsche Übersetzung für [BeerSmith 4](https://beersmith.com) (Windows): Oberfläche, Tooltips, Meldungen und Berichte.
+Meine deutsche Übersetzung für [BeerSmith 4](https://beersmith.com) (Windows): Oberfläche, Tooltips, Meldungen und Berichte.
 
 > **Privates Repo – nur zur persönlichen Sicherung.**
 > Die Dateien enthalten Texte und Vorlagen aus BeerSmith. Laut BeerSmith-Lizenz dürfen Programmdateien
 > und Daten nicht weitergegeben werden. Dieses Repo deshalb **nicht öffentlich machen**.
 
-## Stand
+## Inhalt
 
-| Bereich | Status |
+Der Ordner `BeerSmith4` entspricht dem BeerSmith-Datenordner `%APPDATA%\BeerSmith4`
+(also `C:\Users\<Name>\AppData\Roaming\BeerSmith4`):
+
+| Datei | Zweck |
 |---|---|
-| Menüs, Menüband, Feldnamen, Spalten, Einheiten | übersetzt |
-| Tooltips, Statusleiste, Dialog- und Fehlermeldungen | übersetzt |
-| Berichte (Rezept, Brauablauf, Zutaten, Profile …) | übersetzt, als eigene Berichte |
-| Interne Felder, Optionsbeschreibungen, Mac/Linux-Importhilfe | noch englisch (ca. 700 Stellen, kaum sichtbar) |
-| Schaltflächen *Yes / No / Cancel* in manchen Dialogen | nicht übersetzbar (kommen aus wxWidgets) |
-| Namen der eingebauten Berichte (*Recipe*, *Brew Steps* …) | nicht übersetzbar (fest im Programm) |
+| `Language.sqlite` | Deutsche Sprachdatei (Menüs, Felder, Tooltips, Meldungen). BeerSmith lädt sie beim Start aus dem Datenordner. |
+| `Reports\*_DE.htm` | 21 deutsche Berichtsvorlagen |
+| `Reports.sqlite` | Anmeldung der deutschen Berichte als eigene Berichte (Tabelle `CustomReports`) |
+| `de.tsv` | Lesbare Übersetzungsliste Englisch → Deutsch (Quelle für `Language.sqlite`) |
 
-## Voraussetzungen
+## Wiederherstellen
 
-- BeerSmith 4 unter Windows, installiert in `C:\Program Files (x86)\BeerSmith4`
-- Python 3 (nur Standardbibliothek)
+1. BeerSmith **schließen** (es schreibt `Reports.sqlite` beim Beenden neu).
+2. Den Inhalt des Ordners `BeerSmith4` nach `%APPDATA%\BeerSmith4` kopieren und vorhandene Dateien ersetzen.
+   `de.tsv` wird von BeerSmith nicht gebraucht, kann aber mitkopiert werden.
+3. BeerSmith starten.
 
-## Installation
-
-### 1. Sprachdatei (Oberfläche)
-
-```bash
-python sprachdatei/build.py
-```
-
-Das Skript liest die englischen Texte aus `Resources.sqlite` der eigenen Installation, setzt die Übersetzungen aus
-`sprachdatei/de.tsv` ein und legt das Ergebnis als `%APPDATA%\BeerSmith4\Language.sqlite` ab.
-Dort lädt BeerSmith die Sprachdatei beim Start. Danach **BeerSmith neu starten**.
+Achtung: `Reports.sqlite` enthält **alle** eigenen Berichte. Wer inzwischen weitere eigene Berichte angelegt hat,
+überschreibt diese damit. In dem Fall die deutschen Berichte lieber von Hand anlegen:
+**Werkzeuge → Optionen → Berichte → Bericht hinzufügen** (ja, die Optionen sind im Menü *Werkzeuge* versteckt),
+Typ HTML, Vorlage aus `Reports\` importieren.
 
 Zurück auf Englisch: in BeerSmith *Sprache auf Englisch zurücksetzen* wählen oder `Language.sqlite` löschen.
 
-### 2. Berichte
-
-BeerSmith **schließen**, dann:
-
-```bash
-python berichte/build_reports.py --install
-```
-
-Das Skript erzeugt aus den Original-Vorlagen deutsche Kopien (`*_DE.htm`), kopiert sie nach
-`%APPDATA%\BeerSmith4\Reports` und trägt sie als eigene Berichte in `Reports.sqlite` ein (vorher wird eine Sicherung
-nach `Backups\` gelegt). Die englischen Originale bleiben unverändert.
-
-Danach erscheinen in der Berichtsauswahl oben rechts neben *Recipe*, *Brew Steps* usw. die deutschen Berichte:
+## Berichte in der Auswahl
 
 - **Rezepte:** Rezept, Brauablauf, Braubogen, Rezept (klassisch), Wettbewerb, Extraktrezept, Brauablauf Extrakt,
   Met-Rezept, Brauablauf Met, Brauablauf Cidre
@@ -57,21 +41,18 @@ Danach erscheinen in der Berichtsauswahl oben rechts neben *Recipe*, *Brew Steps
 
 Mit *Standardbericht festlegen* lässt sich die deutsche Fassung als Vorgabe einstellen.
 
-Berichte lassen sich auch von Hand anlegen: **Werkzeuge → Optionen → Berichte → Bericht hinzufügen**
-(ja, die Optionen sind im Menü *Werkzeuge* versteckt).
+## Stand
 
-> Wichtig: BeerSmith schreibt die Berichtstabelle beim Beenden komplett neu. Änderungen an `Reports.sqlite`
-> deshalb nur bei geschlossenem BeerSmith.
+| Bereich | Status |
+|---|---|
+| Menüs, Menüband, Feldnamen, Spalten, Einheiten | übersetzt |
+| Tooltips, Statusleiste, Dialog- und Fehlermeldungen | übersetzt |
+| Berichte | übersetzt, als eigene Berichte |
+| Interne Felder, Optionsbeschreibungen, Mac/Linux-Importhilfe | noch englisch (ca. 700 Stellen, kaum sichtbar) |
+| Schaltflächen *Yes / No / Cancel* in manchen Dialogen | nicht übersetzbar (kommen aus wxWidgets) |
+| Namen der eingebauten Berichte (*Recipe*, *Brew Steps* …) | nicht übersetzbar (fest im Programm) |
 
-## Übersetzung verbessern
-
-- **Oberfläche:** `sprachdatei/de.tsv` bearbeiten – eine Zeile pro Text, `Englisch<TAB>Deutsch`, Zeilenumbrüche als `\n`.
-  Platzhalter wie `%s`, `%d`, `%3.1f` müssen in gleicher Reihenfolge erhalten bleiben (das Skript prüft das).
-  Danach `python sprachdatei/build.py` und BeerSmith neu starten.
-- **Berichte:** `berichte/segs_de.txt` bearbeiten (Nummer = Zeile in `segs.json`), danach
-  `python berichte/build_reports.py --install` bei geschlossenem BeerSmith.
-
-Nach einem BeerSmith-Update beide Skripte erneut ausführen, damit neue oder geänderte Texte übernommen werden.
+Nach einem BeerSmith-Update kann es neue englische Texte geben, die in `Language.sqlite` noch fehlen.
 
 ## Begriffe
 
@@ -90,7 +71,6 @@ Nach einem BeerSmith-Update beide Skripte erneut ausführen, damit neue oder ge�
 | Mash Tun | Maischbottich |
 | Mash Step | Rast |
 | Sparge | Nachguss |
-| Strike / Infusion | Einmaischen / Infusion |
 | Dry Hop | Hopfenstopfen |
 | First Wort Hop | Vorderwürzehopfen |
 | Steep / Whirlpool | Hopfenstand / Whirlpool, bei Malz: Einweichen |
@@ -104,12 +84,3 @@ Nach einem BeerSmith-Update beide Skripte erneut ausführen, damit neue oder ge�
 | Bulk Aging | Tankreifung |
 
 Die Texte verwenden die *Sie*-Form wie das englische Original.
-
-## Technischer Hintergrund
-
-- Alle Oberflächentexte stehen in `C:\Program Files (x86)\BeerSmith4\Resources.sqlite` (Tabellen `Menu`, `Field`,
-  `String`, `Option`). Eine Sprachdatei ist eine Kopie davon mit übersetzten Textspalten.
-- BeerSmith lädt sie aus `%APPDATA%\BeerSmith4\Language.sqlite` (das macht auch der Menüpunkt *Sprachdatei festlegen*).
-- Berichte sind HTML-Vorlagen mit Platzhaltern wie `$NAME`. Eigene Berichte liegen in `%APPDATA%\BeerSmith4\Reports`
-  und sind in `Reports.sqlite`, Tabelle `CustomReports`, eingetragen
-  (`RptSchemaName` = Recipe, Hops, Grain, Misc, Yeast, Water, Style, Equipment, Mash, Carbonation, Age, Shop; `RptType` 1 = HTML).
