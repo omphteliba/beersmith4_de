@@ -277,9 +277,9 @@ Start Using BeerSmith	BeerSmith verwenden
 Recipe Archive	Rezeptarchiv
 Force Save	Speichern erzwingen
 Choose Folder	Ordner wählen
-Cloud Sync	Cloud-Synchronisierung
+Cloud Sync	Cloud-Sync
 Duplicate	Duplizieren
-Undo Last	Letzte Aktion rückgängig
+Undo Last	Rückgängig
 Edit Details...	Details bearbeiten...
 Edit Hops	Hopfen bearbeiten
 Edit Fermentable	Malz/Zucker bearbeiten
@@ -350,7 +350,7 @@ Recover	Wiederherstellen
 Vols	Vol.
 Add Nutrients to Ingredients	Nährstoffe zu Zutaten hinzufügen
 Full Backup to Zip File	Vollsicherung als ZIP
-Full Recover from Zip	Vollständig aus ZIP wiederherstellen
+Full Recover from Zip	Aus ZIP wiederherstellen
 Tilt Data Import	Tilt-Daten importieren
 Import CSV	CSV importieren
 Tilt CSV Import	Tilt-CSV importieren
@@ -401,7 +401,7 @@ Use Local Storage	Lokalen Speicher verwenden
 Use Metric Units	Metrische Einheiten verwenden
 Use English Units	US-Einheiten verwenden
 Check Recipe	Rezept prüfen
-Hop Rate	Hopfengabe pro Volumen
+Hop Rate	Hopfengabe
 Deactivate	Deaktivieren
 Add To Inventory	Zum Bestand hinzufügen
 Import BeerSmith 3 Inventory	BeerSmith-3-Bestand importieren
@@ -497,7 +497,7 @@ Archive	Archiv
 Clear Field	Feld leeren
 Mash pH	Maische-pH
 Lock Recipe	Rezept sperren
-Recover from Auto Backup	Aus automatischer Sicherung wiederherstellen
+Recover from Auto Backup	Auto-Sicherung laden
 Choose Beverage Color	Getränkefarbe wählen
 Import BeerSmith 3 or 2 Data	BeerSmith-3- oder -2-Daten importieren
 Manage/Renew Existing License	Bestehende Lizenz verwalten/erneuern
@@ -1111,7 +1111,7 @@ On Server	Auf dem Server
 Cloud Status	Cloud-Status
 Create an Account	Konto erstellen
 Ratings	Bewertungen
-Autosave Interval	Intervall automatisches Speichern
+Autosave Interval	Autospeicher-Intervall
 Cloud Refresh Time	Cloud-Aktualisierungszeit
 Yeast Name	Hefename
 Total Time:	Gesamtzeit:
