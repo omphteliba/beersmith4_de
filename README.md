@@ -2,9 +2,13 @@
 
 Meine deutsche Übersetzung für [BeerSmith 4](https://beersmith.com) (Windows): Oberfläche, Tooltips, Meldungen und Berichte.
 
-> **Privates Repo – nur zur persönlichen Sicherung.**
-> Die Dateien enthalten Texte und Vorlagen aus BeerSmith. Laut BeerSmith-Lizenz dürfen Programmdateien
-> und Daten nicht weitergegeben werden. Dieses Repo deshalb **nicht öffentlich machen**.
+> **Offizielle Fassung:** Die Sprachdatei ist auch auf der [BeerSmith-Downloadseite](https://beersmith.com/download-beersmith)
+> als `German.sqlite` erhältlich. Am einfachsten installiert man sie von dort über
+> **Werkzeuge → Optionen → Darstellung → Sprachdatei festlegen**.
+>
+> Die Dateien enthalten Texte und Vorlagen aus BeerSmith (© BeerSmith LLC). Die Veröffentlichung hier erfolgt mit
+> freundlicher Genehmigung von Brad Smith. Die Übersetzung ist ein privates Hobbyprojekt, entstanden mit Hilfe eines
+> KI-Assistenten (Claude) und im Brau-Alltag überarbeitet. Korrekturen und Hinweise sind willkommen – gern als Issue.
 
 ## Inhalt
 
